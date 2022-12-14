@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css"></link>
+    <title>Payment</title>
+</head>
+<body>
+    <nav class="navbar" >
+        <a class="h1"  href="#">Home</a>
+        <a class="p1" href="#"> Payment</a>
+        <a class="A1" href="#"> AboutUs</a>
+        <a class="C1" href="#"> ContactUs</a>
+        <a class="S1" href="#"> Services</a>
+    </nav>
+    <header class="header">
+        <h2> Payment Checkout </h2>
+    </header> 
+    <form method='POST' action=''>
+        {% csrf_token %}
+    <h2>Fill up your personel information</h2>
+    <p>First Name: 
+        <input type="text" name="name" placeholder="First name"required>
+        Last Name:
+       <input type="text" name="lname" placeholder="Last name" required> 
+    </p><br>
+    <div>
+        <p> Email: 
+            <input type="email" name="email" placeholder="john@gmail.com"required >
+        </p>
+    </div><br>
+    <div>
+        <p>Card Number :
+            <input type="number" name="number"  placeholder="1226 4525 8565 4595" maxlength="16" required>
+        </p>
+    </div><br>
+    <div>
+        <p class="padding">Expiration Date :
+            <input  type="date" name="date" required >
+           CVV :  
+            <input  type="password" name="Cvv" maxlength="3" required>
+           PIN NO. : 
+            <input type="number" name="pin" maxlength="06" required>
+        </P>
+    </div><br>
+    <input type="submit"   class="btn-primary" value="Pay now">
+</form>
+<hr>
+<footer>
+ <center><p> Copyright VISA@2022 </p></center>
+</footer>
+
+</body>
+</html>

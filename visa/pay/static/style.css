@@ -1,0 +1,35 @@
+body{
+        background-image: url('VISACard.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+        background-size: 1500px 442px;
+
+      }
+
+
+.h1{
+    padding: 50px;
+    color: #ffffff;   
+}
+.p1{
+    padding: 50px;
+    color: #ffffff;   
+}
+.A1{
+    padding: 50px;
+    color: #fffcfc;   
+}
+.S1{
+    padding: 50px;
+    color: #fff4f4;   
+}
+.C1{
+    padding: 50px;
+    color: #faf8f8;   
+}
+
+.btn-primary{
+    
+    margin-left: 2%;
+}
